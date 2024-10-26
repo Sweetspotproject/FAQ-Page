@@ -1,0 +1,110 @@
+/* Estilos generales */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; /* Fuente principal del documento */
+}
+
+body{
+  background-color: #F8FAFC; /* Color de fondo de la pagina */
+}
+
+/* Estilos de encabezado */
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff; /* Color de fondo del encabezado */
+  align-items: center;
+  text-align: center;
+  padding: 50px; /*Espaciado interno */
+}
+
+h1{
+  font-size: 2.25rem; /* Tamano de fuente para el subtitulo */
+  font-weight: 600;
+}
+
+.subtitle{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*Estilos de la seccion de preguntas*/
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  max-width: 800px; /* Ancho maximo de las secciones*/
+  margin: 40px 20px; /* Margen externo */
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5; /* Espaciado entre lineas */
+}
+
+ol, ul{
+  padding: 20px;
+  margin: 20px 0;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+  width: 80%;
+  max-width: 600px;
+}
+
+h3{
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p{
+  margin: 10px 0;
+}
+
+/* Media Queries para pantallas pequenas */
+@media (max-width:768px){
+  h1{
+    font-size: 1.75rem;
+  }
+
+  .subtitle{
+    font-size: 14px;
+  }
+
+  section{
+    margin: 30px 20px;
+  }
+}
+
+/* Media Queries para pantallas muy pequenas*/
+@media (max-width:480px){
+  h1{
+    font-size: 1.5rem;
+  }
+  
+  .subtitle{
+    font-size: 12px;
+  }
+
+  hr{
+    width: 90%;
+  }
+
+  p{
+    font-size: 14px;
+  }
+}
